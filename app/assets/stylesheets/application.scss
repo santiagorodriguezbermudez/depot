@@ -83,6 +83,20 @@
   text-align: center;
 }
 
+#cart {
+  article {
+    h2 {
+      margin-top: 0;
+    }
+    background: white;
+    border-radius: 0.5em;
+    margin: 2em;
+    padding: 1.414em;
+    
+  }
+
+}
+
 // ------------------------- Media Query for Larger Screens---------------------------------
  @media (min-width: 30em) {
   header.main {
