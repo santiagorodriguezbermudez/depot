@@ -19,11 +19,9 @@
     <section class = 'content'>
 
       <nav class = 'side_nav'>
-        <% if @cart %>
-          <article id='cart' class='carts'>
-            <%= render @cart %>
-          </article>
-        <% end %>
+        <div id = 'cart' class='carts'>
+          <%= render_if @cart && @cart.line_items.any?, @cart %>
+        </div>
         
         <ul>
           <li><a href = '/'>Home</a></li>
