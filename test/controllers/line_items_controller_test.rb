@@ -43,7 +43,7 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
     puts @response.body
     
     assert_response :success
-    assert_match /<tr class=\\"line-item-hihglight/", @response.body
+    assert_match /<tr class=\\"line-item-highlight/, @response.body
 
   end
 
