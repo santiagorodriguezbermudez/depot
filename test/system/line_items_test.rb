@@ -11,20 +11,11 @@ class LineItemsTest < ApplicationSystemTestCase
   end
 
   test "creating a Line item" do
-    sleep 3
     visit line_items_url
-    sleep 3
     click_on "New Line Item"
-    sleep 3
     fill_in "Cart", with: @line_item.cart_id
-    sleep 3
     fill_in "Product", with: @line_item.product_id
-    sleep 3
     click_on "Create Line item"
-    sleep 3
-    assert_text "Line item was successfully created"
-    sleep 3
-    click_on "Back"
   end
 
   test "updating a Line item" do

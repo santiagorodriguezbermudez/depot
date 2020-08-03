@@ -30,11 +30,10 @@ class CartsTest < ApplicationSystemTestCase
 
   test "destroying a Cart" do
     visit carts_url
-    sleep 5
     page.accept_confirm do
       click_on "Destroy", match: :first
     end
 
-    assert_text "Cart was successfully destroyed"
+    assert_text "Your cart is currently empty"
   end
 end
